@@ -1,16 +1,16 @@
 function calcularINSS(salarioBruto) {
     let inss;
 
-    if (salarioBruto <= 1302.00) {
+    if (salarioBruto <= 1320.00) {
         inss = salarioBruto * 0.075;
     } else if (salarioBruto <= 2571.29) {
-        inss = salarioBruto * 0.09;
+        inss = salarioBruto * 0.09 - 19.80;
     } else if (salarioBruto <= 3856.94) {
-        inss = salarioBruto * 0.12;
+        inss = salarioBruto * 0.12 - 96.94;
     } else if (salarioBruto <= 7507.49) {
-        inss = salarioBruto * 0.14;
+        inss = salarioBruto * 0.14 - 174.08;
     } else {
-        inss = 7507.49;
+        inss = 876.96;
     }
 
     return inss.toFixed(2);
