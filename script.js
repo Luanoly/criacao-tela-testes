@@ -10,7 +10,7 @@ function calcularINSS(salarioBruto) {
     } else if (salarioBruto <= 7507.49) {
         inss = salarioBruto * 0.14;
     } else {
-        inss = 7507.49; 
+        inss = 7507.49;
     }
 
     return inss.toFixed(2);
