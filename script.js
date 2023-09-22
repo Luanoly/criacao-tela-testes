@@ -37,7 +37,7 @@ function calcularIRPF(salarioBruto) {
 
 function calcularSalarioLiquido(salarioBruto) {
     const inss = calcularINSS(salarioBruto);
-    const irpf = calcularIRPF(salarioBruto);
+    const irpf = calcularIRPF(salarioBruto - inss);
     const salarioLiquido = salarioBruto - parseFloat(inss) - parseFloat(irpf);
 
     return salarioLiquido.toFixed(2);
