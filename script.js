@@ -43,23 +43,27 @@ function calcularSalarioLiquido(salarioBruto) {
     return salarioLiquido.toFixed(2);
 }
 
-document.getElementById('calcularINSS').addEventListener('click', function () {
-    const salarioBruto = parseFloat(document.getElementById('salarioBruto').value);
-    const inss = calcularINSS(salarioBruto);
+module.exports = {calcularINSS, calcularIRPF, calcularSalarioLiquido}
 
-    document.getElementById('resultado').innerHTML = `INSS a ser pago: R$ ${inss}`;
-});
 
-document.getElementById('calcularIRPF').addEventListener('click', function () {
-    const salarioBruto = parseFloat(document.getElementById('salarioBruto').value);
-    const irpf = calcularIRPF(salarioBruto);
+// document.getElementById('calcularINSS').addEventListener('click', function () {
+//     const salarioBruto = parseFloat(document.getElementById('salarioBruto').value);
+//     const inss = calcularINSS(salarioBruto);
 
-    document.getElementById('resultado').innerHTML = `IRPF a ser pago: R$ ${irpf}`;
-});
+//     document.getElementById('resultado').innerHTML = `INSS a ser pago: R$ ${inss}`;
+// });
 
-document.getElementById('calcularSalarioLiquido').addEventListener('click', function () {
-    const salarioBruto = parseFloat(document.getElementById('salarioBruto').value);
-    const salarioLiquido = calcularSalarioLiquido(salarioBruto);
+// document.getElementById('calcularIRPF').addEventListener('click', function () {
+//     const salarioBruto = parseFloat(document.getElementById('salarioBruto').value);
+//     const irpf = calcularIRPF(salarioBruto);
 
-    document.getElementById('resultado').innerHTML = `Salário Líquido: R$ ${salarioLiquido}`;
-});
+//     document.getElementById('resultado').innerHTML = `IRPF a ser pago: R$ ${irpf}`;
+// });
+
+// document.getElementById('calcularSalarioLiquido').addEventListener('click', function () {
+//     const salarioBruto = parseFloat(document.getElementById('salarioBruto').value);
+//     const salarioLiquido = calcularSalarioLiquido(salarioBruto);
+
+//     document.getElementById('resultado').innerHTML = `Salário Líquido: R$ ${salarioLiquido}`;
+// });
+
